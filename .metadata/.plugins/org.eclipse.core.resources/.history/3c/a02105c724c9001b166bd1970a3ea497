@@ -1,0 +1,10 @@
+package Cucumber.Automation;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Base {
+	public WebDriver driver;
+	System.setProperty("webdriver.chrome.driver", "F:\\chromedriver.exe");
+	driver = new ChromeDriver();
+}

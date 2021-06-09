@@ -1,0 +1,73 @@
+package stepDefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
+
+public class stepDefinition {
+	public WebDriver driver;
+	@Given("^User have launched browser$")
+	public void User_have_launched_browser() throws Throwable {
+		System.out.println("we are into background step");
+			
+	}
+	
+	@Given("^I am on Landing page$")
+	public void I_am_on_Landing_page() throws Throwable {
+		System.out.println("I m on landing page");
+		System.setProperty("webdriver.chrome.driver", "F:\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.saucedemo.com/");
+	}
+	
+	@When("^user login into appplication with username as \"([^\"]*)\" and password as \"([^\"]*)\"$") 
+	public void user_login_into_application_with_username_as_something_and_password_as_something(String username, String password) throws Throwable{
+		System.out.println("User login into appplication"+username+"_"+password);
+		try {
+			driver.findElement(By.id("user-name")).sendKeys(username);
+			driver.findElement(By.id("password")).sendKeys(password);
+			driver.findElement(By.id("login-button")).click();
+			
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		
+	}
+	
+	@Then("^user checks that shopping cart is empty$")
+	public void user_checks_that_shopping_cart_is_empty() {
+		boolean isEmpty = driver.findElement(By.className("shopping_cart_badge")).isDisplayed();
+		Assert.assertFalse(isEmpty);
+		System.out.println();
+	}
+	
+	@Then("^Home page is populated$") 
+	public void Home_page_is_populated() throws Throwable {
+		System.out.println("Home page is populated");
+	}
+	
+	@And("^cards are displayed$") 
+	public void cards_are_displayed() throws Throwable {
+		System.out.println("Cards are displayed");
+	}
+	
+	@And("^I login with below details$")
+	public void I_login_with_below_details(DataTable dt) throws Throwable {
+		java.util.List<java.util.List<String>> obj = dt.asLists();
+		System.out.println(obj.get(0).get(0));
+		
+	}
+	
+	@When("^user is logged with (.+) and (.+)$") 
+	public void user_is_logged_with_and(String username, String password) throws Throwable{
+		System.out.println("User is logged with"+username+"_"+password);
+	}
+}

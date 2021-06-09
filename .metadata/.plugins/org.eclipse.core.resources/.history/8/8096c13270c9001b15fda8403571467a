@@ -1,0 +1,23 @@
+Feature: Application Login
+#	Background: 
+#		Given User have launched browser
+	
+	@smokeTest	
+	Scenario: Login
+		Given I am on Landing page
+		When user login into appplication with username as "performance_glitch_user" and password as "secret_sauce"
+		Then user checks that shopping cart is empty 
+		#Then Home page is populated
+		#And cards are displayed
+		#And I login with below details
+		#|abc|def|dadfad|
+		
+	
+	#Scenario Outline: Login with Multiple data parameters
+	#	Given user is logged with <username> and <password>
+	#Examples:
+	#|username|password|
+	#|abced		|	1234	|
+	#|abd		|	1234	|
+	#|ced		|	1234	|
+	#|ab	|	1234	|

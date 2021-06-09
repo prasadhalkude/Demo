@@ -1,0 +1,9 @@
+Feature: Login to sauce demo site and order a product
+	Scenario Outline: Login
+		Given I am on Landing page
+		When user login into appplication with username as "performance_glitch_user" and password as "secret_sauce"
+		Then user checks that shopping cart is empty
+	Examples:
+		|username|password|
+		|performance_glitch_user|secret_sauce|
+		
