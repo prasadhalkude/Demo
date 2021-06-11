@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Automation" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="cucumberOptions.TestRunner" time="54.819">
+    <testsuite name="Login to sauce demo site and order a product" time="54.819">
+      <testcase name="Login" classname="Login to sauce demo site and order a product" time="54.819"/>
+    </testsuite>
+  </testsuite>
+</testrun>

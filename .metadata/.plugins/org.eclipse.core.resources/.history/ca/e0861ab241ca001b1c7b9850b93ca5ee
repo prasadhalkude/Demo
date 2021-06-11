@@ -1,0 +1,26 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class UserCart {
+	public WebDriver driver;
+	By continuetoShop = By.id("continue-shopping");
+	By productAdded;
+	
+	
+	public UserCart(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public WebElement getProductAdded(String product) {
+		productAdded = By.xpath("//div[text()='"+product+"']");
+		return driver.findElement(productAdded);
+	}
+	
+	public WebElement getContinueToShop() {
+		return driver.findElement(continuetoShop);
+	}
+
+}

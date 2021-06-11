@@ -1,0 +1,20 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class UserCart {
+	public WebDriver driver;
+	By productAdded;
+	
+	
+	public UserCart(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public WebElement getProductAdded(String product) {
+		productAdded = By.xpath("//div[text()='"+product+"']");
+		return driver.findElement(productAdded);
+	}
+
+}
