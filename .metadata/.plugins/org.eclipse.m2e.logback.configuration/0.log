@@ -3325,3 +3325,13 @@ Caused by: java.lang.Exception: Resource '/QualiTest/pom.xml' does not exist.
 2021-08-05 01:31:23,559 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Cucumber\Automation\src\main\resources
 2021-08-05 01:31:23,562 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-08-05 01:31:23,562 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Cucumber\Automation\src\test\resources
+2021-08-05 01:35:46,452 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-08-05 01:36:19,779 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Cucumber:Demo:0.0.1-SNAPSHOT @ F:\Cucumber\Demo\pom.xml.
+2021-08-05 01:36:36,295 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-08-05 01:36:36,296 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Cucumber\Demo\src\main\resources
+2021-08-05 01:36:36,301 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-08-05 01:36:36,302 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Cucumber\Demo\src\test\resources
+2021-08-05 01:58:42,820 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-08-05 01:58:42,821 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Cucumber\Demo\src\main\resources
+2021-08-05 01:58:42,827 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-08-05 01:58:42,827 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Cucumber\Demo\src\test\resources
